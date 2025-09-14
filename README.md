@@ -10,18 +10,22 @@ A tool for cleaning, parsing, interpreting and analyzing vcf files.
 ...
 
 ## Installation 
-1.Cloning a project
+1.Cloning this project
 ```bash
 https://github.com/Donyaee-Aliasghar/Vcf_analyzer.git
 ```
-2.Install the packages
+2.Go to the Vcf_analyzer
+```bash
+cd Vcf_analyzer
+```
+3.Install the packages
 >⚠️ Make sure you have peotry on your system.
 ```python
 poetry install
 ```
 
 ## Usage
-1.After cloning go to the Vcf_analyzer
+1.Go to the Vcf_analyzer
 ```bash
 cd Vcf_analyzer
 ```
