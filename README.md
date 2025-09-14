@@ -1,10 +1,8 @@
 # VCF analyzer
 
-### Authors
-**Aliasghar Donyaei**
 ## Title
 A tool for cleaning, parsing, interpreting and analyzing vcf files.
-## Description
+## Description 
 ...
 ## Features
 ...
@@ -29,7 +27,5 @@ python -i <input vsc file(.vcf or .vcf.gz)> cli.py
 ```
 ## Project structure
 ...
-## Authors
-**Aliasghar Donyaei**
 ## License
 Free to use 😊
