@@ -1,7 +1,7 @@
 # VCF analyzer
 
 ### Authors
-    -**Aliasghar Donyaei**
+**Aliasghar Donyaei**
 
 ### Title
 A tool for cleaning, parsing, interpreting and analyzing vcf files.
@@ -14,13 +14,13 @@ A tool for cleaning, parsing, interpreting and analyzing vcf files.
 ### Installation 
 1.Cloning a project
 ```bash
-    https://github.com/Donyaee-Aliasghar/Vcf_analyzer.git
+https://github.com/Donyaee-Aliasghar/Vcf_analyzer.git
 ```
 2.Install the packages
+> ⚠️ Make sure you have peotry on your system.
 ```python
 poetry install
 ```
-> ⚠️ Make sure you have peotry on your system.
 
 ### Usage
 1.After cloning go to the Vcf_analyzer
