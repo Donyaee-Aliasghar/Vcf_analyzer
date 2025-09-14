@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "vcf-analyzer"
+version = "0.1.0"
+description = "Details in README.md file."
+authors = ["Donyaee-Aliasghar <donyaeealiasghar@gmail.com>"]
+readme = "README.md"
+packages = [{include = "vcf_analyzer", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pysam = "^0.23.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
