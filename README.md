@@ -29,7 +29,7 @@ poetry install
 ## Usage
 1.Go to the Vcf_analyzer
 ```bash
-cd Vcf_analyzer
+cd Vcf_analyzer/src
 ```
 2.Run the following code
 ```python
