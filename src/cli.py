@@ -13,24 +13,13 @@ def main():
 
     print("-" * 40)
 
-    # Show time process.
-    print(f"[✨] Process time : >>> {end - start:.10f} s <<<")
+    total = end - start
+    h = int(total // 3600)
+    m = int((total % 3600) // 60)
+    s = int(total % 60)
 
-
-# ============================================
-
-# import timeit
-
-
-# def main():
-#     """main function with timeit package."""
-#     if __name__ == "__main__":
-#         execution_time = timeit.timeit(runner(), number=1)
-
-#         print("-" * 40)
-
-#         # Show time process.
-#         print(f"[✨] Process time : >>> {execution_time:.10f} s <<<")
+    # Show time process with leading zeros.
+    print(f"[⏱️ ] Total execution time >>> {h:02d}:{m:02d}:{s:02d} ({total:.10f} s) <<<")
 
 
 if __name__ == "__main__":
