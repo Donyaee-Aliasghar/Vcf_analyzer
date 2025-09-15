@@ -4,7 +4,9 @@ import argparse
 
 from pathlib import Path
 
-from Projects.Python_language.Personal.Vcf_analyzer.src.data.purification import process_vcf
+from data.purification import process_vcf
+from basic_analyse.main import main
+from data.routing import INPUT_PURE_FILE
 
 
 def runner():
@@ -18,9 +20,6 @@ def runner():
 
     input_path = Path(args.input)
 
-    # Cleaned vcf file operations.
-    process_vcf(input_path)
-
     args = parser.parse_args()
 
     # Input file check.
@@ -30,4 +29,8 @@ def runner():
     print("[✅] Pure VCF file found >>> reading file...")
     print("[✅] Start operations...")
 
-    # ...
+    # Cleaned vcf file operations.
+    process_vcf(input_path)
+
+    # Basic VCF file analyse.
+    main(INPUT_PURE_FILE)
