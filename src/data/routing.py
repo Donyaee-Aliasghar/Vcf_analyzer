@@ -23,3 +23,7 @@ if vcf_files:
 else:
     INPUT_PURE_FILE = None
     print(f"[❌] No .vcf file found in {OUTPUT_PURIFIED_DATA_DIR}")
+
+# Output dir for advanced analyse.
+OUTPUT_ADVANCED_ANALYSE_DIR = RESULTS_DIE / "advanced_analyse"
+OUTPUT_ADVANCED_ANALYSE_DIR.mkdir(parents=True, exist_ok=True)
