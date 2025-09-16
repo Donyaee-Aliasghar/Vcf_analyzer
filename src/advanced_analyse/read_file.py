@@ -1,16 +1,16 @@
 """Module for reading VCF files."""
 
+import os
+import pandas as pd
+
 try:
     from cyvcf2 import VCF
-except ImportError:
-    raise ImportError("cyvcf2 is not installed. Please install it with 'pip install cyvcf2'.")
-import pandas as pd
+except ImportError as exc:
+    raise ImportError("cyvcf2 is not installed. Please install it.") from exc
 
 
 def read_file(file_path):
     """Read a VCF file and return its contents as a pandas DataFrame."""
-
-    import os
 
     records = []
 

@@ -2,7 +2,7 @@
 
 import time
 
-from runner import runner
+from .runner import runner
 
 
 def main():

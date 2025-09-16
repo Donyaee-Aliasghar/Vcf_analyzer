@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 import pandas as pd
-from advanced_analyse.read_file import read_file
-from data.routing import OUTPUT_ADVANCED_ANALYSE_DIR
+from ..advanced_analyse.read_file import read_file
+from ..data.routing import OUTPUT_ADVANCED_ANALYSE_DIR
 
 
 def visualize_data(data):
@@ -61,4 +61,4 @@ def visualize_data(data):
     }
     pd.DataFrame([summary]).to_csv(f"{OUTPUT_ADVANCED_ANALYSE_DIR}/vcf_data.csv", index=False)
 
-    print(f"[✅] Advanced analysis complete! and visualizations saved in {OUTPUT_ADVANCED_ANALYSE_DIR}")
+    print(f"[✅] Advanced analysis and visualizations complete. : {OUTPUT_ADVANCED_ANALYSE_DIR}")

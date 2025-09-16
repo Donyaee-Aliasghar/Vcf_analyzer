@@ -4,10 +4,10 @@ import argparse
 
 from pathlib import Path
 
-from data.routing import INPUT_PURE_FILE
-from data.purification import process_vcf
-from basic_analyse.main import main
-from visualization.main import visualize_data
+from .data.routing import INPUT_PURE_FILE
+from .data.purification import process_vcf
+from .basic_analyse.main import main
+from .visualization.main import visualize_data
 
 
 def runner():

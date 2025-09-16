@@ -2,12 +2,12 @@
 
 import statistics
 
-from data.routing import OUTPUT_BASIC_ANALYSE_DIR
-from data.loaders import open_vcf
+from ..data.routing import OUTPUT_BASIC_ANALYSE_DIR
+from ..data.loaders import open_vcf
 from .clean_vcf_line import clean_vcf_line
 
 
-def main(INPUT_PURE_FILE):
+def main(input_pure_file):
     """Main operations."""
 
     total_variants = 0
@@ -18,7 +18,7 @@ def main(INPUT_PURE_FILE):
     # Output file path.
     output_path = OUTPUT_BASIC_ANALYSE_DIR / "basic_analyse.txt"
 
-    with open_vcf(INPUT_PURE_FILE) as fi, open(str(output_path), "w", encoding="utf-8") as fo:
+    with open_vcf(input_pure_file) as fi, open(str(output_path), "w", encoding="utf-8") as fo:
         for line in fi:
             line = line.strip()
             if not line:

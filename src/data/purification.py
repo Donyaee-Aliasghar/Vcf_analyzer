@@ -20,6 +20,7 @@ def clean_vcf_line(line: str) -> bool:
 
 
 def process_vcf(input_paths):
+    """Process VCF file."""
     clean_file = OUTPUT_PURIFIED_DATA_DIR / ("purified_" + input_paths.name + ".vcf")
     with open_vcf(input_paths) as fr, open(clean_file, "w", encoding="utf-8") as fw:
         print("[✅] Open raw VCF file successful.")
