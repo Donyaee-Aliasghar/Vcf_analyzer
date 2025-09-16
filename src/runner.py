@@ -4,9 +4,10 @@ import argparse
 
 from pathlib import Path
 
+from data.routing import INPUT_PURE_FILE
 from data.purification import process_vcf
 from basic_analyse.main import main
-from data.routing import INPUT_PURE_FILE
+from visualization.main import visualize_data
 
 
 def runner():
@@ -34,3 +35,6 @@ def runner():
 
     # Basic VCF file analyse.
     main(INPUT_PURE_FILE)
+
+    # Advanced VCF file analyse.
+    visualize_data(INPUT_PURE_FILE)
