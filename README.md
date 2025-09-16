@@ -6,10 +6,18 @@
 A tool for cleaning, parsing, interpreting and analyzing vcf files.
 
 ## Description 
-...
+This project provides a comprehensive solution for working with Variant Call Format (VCF) files, which are widely used in bioinformatics for storing gene sequence variations. The VCF analyzer simplifies the process of cleaning, parsing, interpreting, and analyzing VCF files, making it easier for researchers and developers to extract meaningful insights from genetic data. With an intuitive interface and robust features, this tool is suitable for both beginners and advanced users working with genomic datasets.
 
 ## Features
-...
+- Clean and filter VCF files to remove unwanted variants
+- Parse VCF files and extract relevant information (e.g., sample genotypes, variant annotations)
+- Summarize variant statistics (e.g., counts, frequencies, quality metrics)
+- Support for both uncompressed `.vcf` and compressed `.vcf.gz` and `.vcf.bgz` files
+- Command-line interface for easy interaction
+- Export results to various formats (CSV, TXT)
+- Modular and extensible codebase for custom analyses
+- User-friendly error handling and informative messages
+- Compatible with Python 3.x and Poetry for dependency management
 
 ## Installation 
 1.Cloning this project
@@ -37,7 +45,36 @@ python -i <input vsc file(.vcf or .vcf.gz)> cli.py
 ```
 
 ## Project structure
-...
+.
+├── pyproject.toml
+├── README.md
+├── results
+│   ├── advanced_analyse/
+│   │   
+│   ├── basic_analyse/
+│   │   
+│   └── data
+│       └── purified/
+│           
+├── src
+│   ├── advanced_analyse
+│   │   └── read_file.py
+│   ├── basic_analyse
+│   │   ├── clean_vcf_line.py
+│   │   ├── main.py
+│   │       
+│   ├── cli.py
+│   ├── data
+│   │   ├── loaders.py
+│   │   ├── purification.py
+│   │   └── routing.py
+│   ├── __init__.py
+│   ├── runner.py
+│   └── visualization
+│       ├── main.py
+│
+└── tests
+    └── __init__.py
 
 ## License
 Free to use 😊
