@@ -44,37 +44,5 @@ cd Vcf_analyzer/src
 python -i <input vsc file(.vcf or .vcf.gz)> cli.py
 ```
 
-## Project structure
-.
-├── pyproject.toml
-├── README.md
-├── results
-│   ├── advanced_analyse/
-│   │   
-│   ├── basic_analyse/
-│   │   
-│   └── data
-│       └── purified/
-│           
-├── src
-│   ├── advanced_analyse
-│   │   └── read_file.py
-│   ├── basic_analyse
-│   │   ├── clean_vcf_line.py
-│   │   ├── main.py
-│   │       
-│   ├── cli.py
-│   ├── data
-│   │   ├── loaders.py
-│   │   ├── purification.py
-│   │   └── routing.py
-│   ├── __init__.py
-│   ├── runner.py
-│   └── visualization
-│       ├── main.py
-│
-└── tests
-    └── __init__.py
-
 ## License
 Free to use 😊
